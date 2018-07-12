@@ -9,6 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Notzee! A Yahtzee Clone</h1>
         <StatusBar />
         <DiceRow />
         <RollButton />
