@@ -7,8 +7,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Body name="Jared"/>
+        <StatusBar />
+        <DiceRow />
+        <RollButton />
+        <ScoreContainer />
       </div>
     );
   }
