@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-import Body from './Body';
+import StatusBar from './StatusBar';
+import DiceRow from './DiceRow';
+import RollButton from './RollButton';
+import ScoreContainer from './ScoreContainer';
 
 class App extends Component {
   render() {
