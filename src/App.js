@@ -6,6 +6,12 @@ import RollButton from './RollButton';
 import ScoreContainer from './ScoreContainer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dice: Array(5).fill(null),
+    };
+  }
   render() {
     return (
       <div className="App">
