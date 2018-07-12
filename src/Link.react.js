@@ -13,7 +13,7 @@ export default class Link extends React.Component {
     this._onMouseLeave = this._onMouseLeave.bind(this);
 
     this.state = {
-      class: STATUS.NORMAL;
+      class: STATUS.NORMAL,
     };
   }
 
