@@ -1,0 +1,8 @@
+.StatusBar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.StatusBar div {
+    text-align: center;
+}

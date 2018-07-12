@@ -10,7 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Notzee! A Yahtzee Clone</h1>
-        <StatusBar />
+        <StatusBar 
+          currentPlayer="1"
+          currentTurn="3"
+          currentRoll="2"
+        />
         <DiceRow />
         <RollButton />
         <ScoreContainer />
