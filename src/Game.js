@@ -10,16 +10,9 @@ class Game extends Component {
     super(props);
     this.state = {
       dice: Array(5).fill(null),
-      players: [
-        {
-          name: '',
-          roll: null,
-          score: null
-        }
-      ],
+      players: [],
       currentTurn: null,
     };
-    const maxTurns = 13;
   }
 
   rollDice() {
@@ -31,7 +24,18 @@ class Game extends Component {
   }
 
   componentDidMount() {
-    this.rollDice();
+    let numPlayers = prompt("How many players?");
+    let players = [];
+    for (let i=0; i<numPlayers; i++) {
+      players.push(
+        {
+          name: '',
+          roll: 1,
+          score: 0
+        }
+      );
+    }
+    this.setState({players: players});
   }
 
   render() {
