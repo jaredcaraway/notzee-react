@@ -3,7 +3,9 @@ import './Die.css';
 
 function Die() {
   return (
-    <p>Die component loaded</p>
+    <div className="Die">
+      Die!
+    </div>
   );
 }
 
