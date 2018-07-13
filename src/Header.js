@@ -4,9 +4,9 @@ import './Header.css';
 
 function Header() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Welcome to React</h1>
+    <header className="Game-header">
+      <img src={logo} className="Game-logo" alt="logo" />
+      <h1 className="Game-title">Welcome to React</h1>
     </header>
   );
 }

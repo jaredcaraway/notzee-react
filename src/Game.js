@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Game.css';
 import StatusBar from './StatusBar';
 import DiceRow from './DiceRow';
 import RollButton from './RollButton';
 import ScoreContainer from './ScoreContainer';
 
-class App extends Component {
+class Game extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="Game">
         <h1>Notzee! A Yahtzee Clone</h1>
         <StatusBar 
           currentPlayer="1"
@@ -39,4 +39,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Game;

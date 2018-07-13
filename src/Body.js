@@ -4,7 +4,7 @@ import './Body.css';
 export default class Body extends React.Component {
   render(props) {
     return (
-      <p className="App-intro">
+      <p className="Game-intro">
         Hi, {this.props.name}.
       </p>
     );
