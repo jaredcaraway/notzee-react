@@ -13,13 +13,25 @@ class Game extends Component {
       players: [
         {
           name: '',
-          turn: null,
           roll: null,
           score: null
         }
       ],
       currentTurn: null,
     };
+    const maxTurns = 13;
+  }
+
+  rollDice() {
+    let dice = [];
+    for (let i=0; i<5; i++) {
+      dice.push(Math.ceil(Math.random() * 6));
+    }
+    this.setState({dice: dice});
+  }
+
+  componentDidMount() {
+    this.rollDice();
   }
 
   render() {
