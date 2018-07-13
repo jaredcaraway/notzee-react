@@ -10,8 +10,18 @@ class App extends Component {
     super(props);
     this.state = {
       dice: Array(5).fill(null),
+      players: [
+        {
+          name: '',
+          turn: null,
+          roll: null,
+          score: null
+        }
+      ],
+      currentTurn: null,
     };
   }
+
   render() {
     return (
       <div className="App">
