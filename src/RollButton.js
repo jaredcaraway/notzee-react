@@ -1,8 +1,9 @@
 import React from 'react';
+import './RollButton.css';
 
 function RollButton() {
   return (
-    <p>RollButton component loaded</p>
+    <button className="RollButton">Roll</button>
   );
 }
 
