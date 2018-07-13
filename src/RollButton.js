@@ -1,10 +1,17 @@
 import React from 'react';
 import './RollButton.css';
 
-function RollButton() {
-  return (
-    <button className="RollButton">Roll</button>
-  );
+class RollButton extends React.Component {
+  
+  render() {
+    return (
+      <button
+        className="RollButton"
+      >
+        Roll
+      </button>
+    );
+  }
 }
 
 export default RollButton;
